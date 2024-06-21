@@ -4,6 +4,7 @@ import { GetUserCourseList } from "@/app/_services";
 import { useUser } from "@clerk/nextjs";
 import CategoryItem from "../../_components/CategoryItem";
 import { useRouter } from "next/navigation";
+import Welcomeback from "./_components/Welcomeback";
 
 function Dashboard() {
   const { user } = useUser();
@@ -28,6 +29,7 @@ function Dashboard() {
 
   return (
     <div>
+    <Welcomeback user={user}/>
       {userCourseList.length > 0 ? (
         <>
           <h2 className="text-[20px] font-medium">My Enrolled Courses:</h2>

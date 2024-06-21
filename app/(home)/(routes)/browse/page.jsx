@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import CatagoryFilter from "./_components/CatagoryFilter";
 import { getCourseList } from "@/app/_services";
 import CourseList from "./_components/CourseList";
+import WelcomeBanner from "./_components/Welcome";
 
 function Browse() {
   const [courses, setCourses] = useState([]);
@@ -42,6 +43,7 @@ function Browse() {
 
   return (
     <div>
+      <WelcomeBanner />
       <CatagoryFilter selectedCatagory={(catagory) => filterCourse(catagory)} />
       {courses ? <CourseList courses={courses} /> : null}
     </div>

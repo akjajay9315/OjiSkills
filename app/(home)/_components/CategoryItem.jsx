@@ -8,7 +8,7 @@ function CategoryItem({course}) {
   return (
     <div>
       <div
-        className="border-2 rounded-lg p-3 cursor-pointer hover:border-green-400"
+        className="border rounded-xl   p-2 cursor-pointer hover:shadow-green-500 hover:shadow-md"
       >
         <Image
           src={course?.banner?.url}
