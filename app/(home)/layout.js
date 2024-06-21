@@ -5,7 +5,7 @@ import Header from './_components/Header'
 function homeLayout({children}) {
   return (
     <div>
-      <div className="h-full w-64 flex-col fixed inset-y-0 z-[-10]">
+      <div className="h-full w-64 flex-col fixed inset-y-0 z-[-10] md:z-10 lg:z-10">
         <SideBarNav />
       </div>
       <Header />
