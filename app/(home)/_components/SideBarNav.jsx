@@ -40,7 +40,7 @@ function SideBarNav() {
   };
 
   return (
-    <div className="hidden lg:flex flex-col h-screen bg-white border-r shadow-md">
+    <div className="hidden lg:flex flex-col h-screen bg-white border-r shadow-md ">
       <div className="p-5 border-b">
         <Image src="/logo.svg" alt="logo" width={159} height={100} />
       </div>
