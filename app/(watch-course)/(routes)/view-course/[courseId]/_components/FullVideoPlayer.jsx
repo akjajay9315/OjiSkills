@@ -24,7 +24,7 @@ function FullVideoPlayer({ activeChapter }) {
   };
 
   return (
-    <div className="rounded-lg overflow-hidden relative p-4 sm:mt-3 md:mt-6lg:mt-8 lg:w-[55rem] lg:h-[40rem]">
+    <div className="rounded-lg overflow-hidden relative p-2 sm:mt-3 md:mt-6lg:mt-8 lg:w-[55rem] lg:h-[40rem]">
       {videoUrl ? (
         isYouTubeUrl ? (
           <div className="relative pb-[56.25%] overflow-hidden rounded-lg mb-4">
