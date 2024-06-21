@@ -1,6 +1,6 @@
-import { CheckCircle2,XCircle } from "lucide-react";
-import React from "react";
-import { useState } from "react";
+// FullVideoPlayer.js
+import React, { useState } from "react";
+import { CheckCircle2, XCircle } from "lucide-react";
 
 function FullVideoPlayer({ activeChapter }) {
   const [isDone, setIsDone] = useState(false);
@@ -24,7 +24,7 @@ function FullVideoPlayer({ activeChapter }) {
   };
 
   return (
-    <div className="rounded-lg overflow-hidden relative p-4 mt-[2rem] w-[55rem] h-[40rem]">
+    <div className="rounded-lg overflow-hidden relative p-4 mt-8 lg:w-[55rem] lg:h-[40rem]">
       {videoUrl ? (
         isYouTubeUrl ? (
           <div className="relative pb-[56.25%] overflow-hidden rounded-lg mb-4">
@@ -54,8 +54,7 @@ function FullVideoPlayer({ activeChapter }) {
         </h2>
         <button
           onClick={handleButtonClick}
-          className="bg-green-500 border border-black text-white p-2 px-5 rounded-lg flex gap-2
-        hover:bg-green-600 hover:border-green-600"
+          className="bg-green-500 border border-black text-white p-2 px-5 rounded-lg flex gap-2 hover:bg-green-600 hover:border-green-600"
         >
           {isDone ? <XCircle /> : <CheckCircle2 />}
           <h2>{isDone ? "Mark as Undone" : "Mark as Done"}</h2>
