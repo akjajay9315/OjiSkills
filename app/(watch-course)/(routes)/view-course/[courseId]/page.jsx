@@ -35,7 +35,7 @@ function ViewCourse({ params }) {
   return (
     <div className="flex flex-col lg:flex-row">
       {/* UserButton */}
-      <div className="p-4">
+      <div className="p-3">
         <UserButton />
       </div>
       {/* Video Player */}

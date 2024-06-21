@@ -24,7 +24,7 @@ function FullVideoPlayer({ activeChapter }) {
   };
 
   return (
-    <div className="rounded-lg overflow-hidden relative p-4 mt-8 lg:w-[55rem] lg:h-[40rem]">
+    <div className="rounded-lg overflow-hidden relative p-4 sm:mt-3 md:mt-6lg:mt-8 lg:w-[55rem] lg:h-[40rem]">
       {videoUrl ? (
         isYouTubeUrl ? (
           <div className="relative pb-[56.25%] overflow-hidden rounded-lg mb-4">
@@ -49,7 +49,7 @@ function FullVideoPlayer({ activeChapter }) {
         )
       ) : null}
       <div className="flex flex-col lg:flex-row justify-between items-center border-2 border-black p-4 rounded-lg">
-        <h2 className="text-[22px] md:text-[18px] lg:text-[18px] font-medium mt-1">
+        <h2 className="text-[22px] sm:text-[16px] md:text-[18px] lg:text-[18px] font-medium mt-1">
           {activeChapter?.name}
         </h2>
         <button
