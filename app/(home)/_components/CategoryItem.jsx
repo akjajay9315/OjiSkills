@@ -3,6 +3,7 @@ import { Book } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 
+
 function CategoryItem({ course }) {
   return (
     <div>
@@ -24,7 +25,7 @@ function CategoryItem({ course }) {
           <div className="flex items-center gap-2">
             <Book className="h-6 w-6 text-green-800 rounded-full bg-green-200 p-1" />
             <h2 className="text-[14px] text-gray-400">
-              {course.totalChapters} Chapters
+              {course?.totalChapters} Chapters
             </h2>
           </div>
         ) : null}

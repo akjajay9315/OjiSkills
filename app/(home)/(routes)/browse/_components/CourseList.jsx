@@ -2,8 +2,8 @@ import React from "react";
 import Image from "next/image";
 import { Book } from "lucide-react";
 import Link from "next/link";
-import CoursePreview from "../../course_preview/[courseId]/page";
 import CategoryItem from "@/app/(home)/_components/CategoryItem";
+import CoursePreview from "../../course_preview/[courseId]/page";
 
 function CourseList({ courses }) {
   return (
