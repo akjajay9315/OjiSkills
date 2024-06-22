@@ -1,15 +1,12 @@
-"use client"
-import { Book } from 'lucide-react';
-import Image from 'next/image';
-// import Image from 'next/image';
-import React from 'react'
+"use client";
+import { Book } from "lucide-react";
+import Image from "next/image";
+import React from "react";
 
-function CategoryItem({course}) {
+function CategoryItem({ course }) {
   return (
     <div>
-      <div
-        className="border rounded-xl   p-2 cursor-pointer hover:shadow-green-500 hover:shadow-md"
-      >
+      <div className="border rounded-xl p-2 cursor-pointer hover:shadow-green-500 hover:shadow-md">
         <Image
           src={course?.banner?.url}
           alt={course?.name}
@@ -24,9 +21,9 @@ function CategoryItem({course}) {
           <h2 className="text-gray-400 text-[14px]">{course?.author}</h2>
         </div>
         {course?.totalChapters ? (
-          <div className="flex item-centre gap-2">
-            <Book  className="h-6 w-6 text-green-800 rounded-full bg-green-200 p-1" />
-            <h2 className="text-[14px] text-gray-400 ">
+          <div className="flex items-center gap-2">
+            <Book className="h-6 w-6 text-green-800 rounded-full bg-green-200 p-1" />
+            <h2 className="text-[14px] text-gray-400">
               {course.totalChapters} Chapters
             </h2>
           </div>
@@ -37,4 +34,4 @@ function CategoryItem({course}) {
   );
 }
 
-export default CategoryItem
+export default CategoryItem;

@@ -98,8 +98,8 @@ export const GetUserCourseList=async(userEmail)=>{
           banner {
             url
           }
+          name  
           discription
-          name
           id
           free
           tags
